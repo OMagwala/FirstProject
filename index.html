@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tic-Tac-Toe</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <main id="container">
+            <h1>Tic-Tac-Toe</h1>
+
+            <div class="gameBoard">
+                <div data-index="1" class="cellBlock rightBorder bottomBorder"></div>
+                <div data-index="2" class="cellBlock rightBorder bottomBorder"></div>
+                <div data-index="3" class="cellBlock bottomBorder"></div>
+                <div data-index="4" class="cellBlock rightBorder bottomBorder"></div>
+                <div data-index="5" class="cellBlock rightBorder bottomBorder"></div>
+                <div data-index="6" class="cellBlock bottomBorder"></div>
+                <div data-index="7" class="cellBlock rightBorder"></div>
+                <div data-index="8" class="cellBlock rightBorder"></div>
+                <div data-index="9" class="cellBlock"></div>
+                <div id="strike" class="strike"></div>
+            </div>
+
+            <div id="announcer" class="hide">
+                <span id="winner"></span>
+                <section id="rb"><button id="reset" class="resetButton">Restart</button></section>  
+            </div>
+
+        </main>
+        <script src="tic.js"></script>
+    </body>
+</html>

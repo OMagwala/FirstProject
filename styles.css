@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: saddlebrown;
+    color: darkorange;
+    font-style: italic;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: currentColor;
+    margin-top: 20%;
+    text-align: center;
+}
+
+.gameBoard {
+    margin-top: 20%;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.strike {
+    position: absolute;
+    background-color: rgb(66, 32, 7);
+}
+
+.strikeRow1 {
+    width: 100%;
+    height: 2px;
+    top:15%
+}
+
+.strikeRow2 {
+    width: 100%;
+    height: 2px;
+    top:48%
+}
+
+.strikeRow3 {
+    width: 100%;
+    height: 2px;
+    top:83%
+}
+
+.strikeCol1 {
+    width: 2px;
+    height: 100%;
+    left:16%
+}
+
+.strikeCol2 {
+    width: 2px;
+    height: 100%;
+    left: 49%
+}
+
+.strikeCol3 {
+    width: 2px;
+    height: 100%;
+    left:84%
+}
+
+.strikeDiag1 {
+    width: 90%;
+    height: 4px;
+    top: 50%;
+    left: 5%;
+    transform: skewY(45deg);
+}
+
+.strikeDiag2 {
+    width: 90%;
+    height: 4px;
+    top: 49%;
+    left: 5%;
+    transform: skewY(-45deg);
+}
+
+.cellBlock {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightBorder {
+    border-right: 0.1em solid chocolate;
+}
+
+.bottomBorder {
+    border-bottom: 0.1em solid chocolate;
+}
+
+.displayTurns, #announcer {
+    text-align: center;
+    margin-top: 8%;
+}
+
+#rb {
+    margin-top: 10px;
+}
+
+#announcer {
+    background-color: chocolate;
+    border-radius: 25px;
+    color: rgb(66, 32, 7);
+    font-size: x-large;
+    box-shadow: 2px 2px 2px 2px rgb(66, 32, 7);
+    font-weight: bold;
+    padding-top: 4px;
+    padding-bottom: 5px;
+}
+
+.resetButton {
+    background-color: saddlebrown;
+    color: rgb(66, 32, 7);
+    margin: 4px;
+    border-color: transparent;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 1px 2px 2px 1px rgb(66, 32, 7);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+.hide {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.hoverX:hover::after {
+    content: "X";
+    opacity: 0.5;
+}
+
+.hoverO:hover::after {
+    content: "O";
+    opacity: 0.5;
+}
